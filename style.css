@@ -83,7 +83,6 @@ header {
     padding: 160px 0 120px; 
     position: relative;
     overflow: hidden;
-    text-align: right;
 }
 
 /* 头部背景图片样式 - 左侧小图 */
@@ -108,14 +107,14 @@ header {
     transform: translateY(-50%) scale(1.02);
 }
 
-/* 头部内容调整 - 放在右侧 */
+/* 头部内容调整 - 左对齐但整体靠右 */
 .header-content {
     position: relative;
     z-index: 1;
     max-width: 600px;
-    text-align: right;
-    margin-right: 60px;
     margin-left: auto;
+    margin-right: 10%;
+    text-align: left;
 }
 
 header h1 { 
@@ -136,7 +135,7 @@ header .subtitle {
 /* 头部徽章对齐 */
 .header-badges {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     gap: 15px;
     margin: 30px 0;
     flex-wrap: wrap;
@@ -576,7 +575,7 @@ a:focus {
     }
     
     .header-content {
-        margin-right: 40px;
+        margin-right: 5%;
     }
 }
 
@@ -588,7 +587,7 @@ a:focus {
     }
     
     .header-content {
-        margin-right: 30px;
+        margin-right: 3%;
         max-width: 500px;
     }
 }
