@@ -108,13 +108,13 @@ header {
     position: relative;
     z-index: 1;
     max-width: 630px;
-    margin-left: 55%;
+    margin-left: 50%;
     margin-right: auto;
     text-align: left;
 }
 
 header h1 { 
-    font-size: 3.5em; 
+    font-size: 3em; 
     margin-bottom: 25px; 
     font-weight: 700;
     text-shadow: 0 2px 10px rgba(0,0,0,0.2);
@@ -713,6 +713,7 @@ a:focus {
 ::-webkit-scrollbar-thumb:hover {
     background: #764ba2;
 }
+
 
 
 
