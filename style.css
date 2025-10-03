@@ -88,18 +88,18 @@ header {
 /* 头部背景图片样式 - 左侧小图 */
 .header-bg-image {
     position: absolute;
-    top: 61%;
-    left: 2%;
+    top: 59%;
+    left: 3%;
     transform: translateY(-50%);
     width: 843px;
     height: 440px;
     background: url('./assets/images/toubu01.png') center/contain no-repeat;
-    opacity: 0.2;
+    opacity: 0.3;
     z-index: 0;
 }
 
 .header-bg-image:hover {
-    opacity: 0.25;
+    opacity: 0.35;
     transform: translateY(-50%) scale(1.02);
 }
 
@@ -107,7 +107,7 @@ header {
 .header-content {
     position: relative;
     z-index: 1;
-    max-width: 630px;
+    max-width: 550px;
     margin-left: auto;
     margin-right: 0%;
     text-align: left;
@@ -713,6 +713,7 @@ a:focus {
 ::-webkit-scrollbar-thumb:hover {
     background: #764ba2;
 }
+
 
 
 
