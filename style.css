@@ -107,9 +107,9 @@ header {
 .header-content {
     position: relative;
     z-index: 1;
-    max-width: 610px;
-
-    margin-right: 0%;
+    max-width: 620px;
+    margin-left: 50%;
+    margin-right: auto;
     text-align: left;
 }
 
