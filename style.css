@@ -88,7 +88,7 @@ header {
 /* 头部背景图片样式 - 左侧小图 */
 .header-bg-image {
     position: absolute;
-    top: 59%;
+    top: 56%;
     left: 3%;
     transform: translateY(-50%);
     width: 843px;
@@ -107,8 +107,8 @@ header {
 .header-content {
     position: relative;
     z-index: 1;
-    max-width: 620px;
-    margin-left: 50%;
+    max-width: 630px;
+    margin-left: 55%;
     margin-right: auto;
     text-align: left;
 }
@@ -713,6 +713,7 @@ a:focus {
 ::-webkit-scrollbar-thumb:hover {
     background: #764ba2;
 }
+
 
 
 
