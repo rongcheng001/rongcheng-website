@@ -80,44 +80,63 @@ nav {
 header { 
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
     color: white; 
-    padding: 150px 0 100px; 
-    text-align: center; 
+    padding: 160px 0 120px; 
     position: relative;
     overflow: hidden;
+    text-align: right;
 }
 
+/* 头部背景图片样式 - 左侧小图 */
 .header-bg-image {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('./assets/images/screenshot-main.png') center/cover no-repeat;
-    opacity: 0.1;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    width: 450px;
+    height: 320px;
+    background: url('./assets/images/screenshot-main.png') center/contain no-repeat;
+    opacity: 0.2;
     z-index: 0;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: all 0.3s ease;
 }
 
+.header-bg-image:hover {
+    opacity: 0.25;
+    transform: translateY(-50%) scale(1.02);
+}
+
+/* 头部内容调整 - 放在右侧 */
 .header-content {
     position: relative;
     z-index: 1;
+    max-width: 600px;
+    text-align: right;
+    margin-right: 60px;
+    margin-left: auto;
 }
 
 header h1 { 
     font-size: 3.5em; 
-    margin-bottom: 20px; 
+    margin-bottom: 25px; 
     font-weight: 700;
     text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    line-height: 1.2;
 }
 
 header .subtitle { 
-    font-size: 1.3em; 
-    margin-bottom: 15px; 
+    font-size: 1.4em; 
+    margin-bottom: 20px; 
     opacity: 0.9;
+    line-height: 1.5;
 }
 
+/* 头部徽章对齐 */
 .header-badges {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     gap: 15px;
     margin: 30px 0;
     flex-wrap: wrap;
@@ -549,6 +568,31 @@ a:focus {
 }
 
 /* 响应式设计 */
+@media (max-width: 1200px) {
+    .header-bg-image {
+        width: 380px;
+        height: 280px;
+        left: 5%;
+    }
+    
+    .header-content {
+        margin-right: 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .header-bg-image {
+        width: 320px;
+        height: 240px;
+        left: 3%;
+    }
+    
+    .header-content {
+        margin-right: 30px;
+        max-width: 500px;
+    }
+}
+
 @media (max-width: 768px) {
     header h1 { 
         font-size: 2.5em; 
@@ -603,6 +647,57 @@ a:focus {
     .carousel-btn {
         width: 40px;
         height: 40px;
+    }
+    
+    /* 头部响应式调整 */
+    .header-bg-image {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        width: 280px;
+        height: 200px;
+        margin: 40px auto 20px;
+        opacity: 0.2;
+    }
+    
+    .header-content {
+        max-width: 100%;
+        text-align: center;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    
+    header {
+        text-align: center;
+        padding: 130px 0 80px;
+    }
+    
+    header h1 {
+        font-size: 2.8em;
+    }
+    
+    header .subtitle {
+        font-size: 1.2em;
+    }
+    
+    .header-badges {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-bg-image {
+        width: 250px;
+        height: 180px;
+    }
+    
+    header h1 {
+        font-size: 2.3em;
+    }
+    
+    header .subtitle {
+        font-size: 1.1em;
     }
 }
 
