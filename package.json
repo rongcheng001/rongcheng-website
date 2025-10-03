@@ -1,0 +1,12 @@
+{
+  "name": "rongcheng-tool",
+  "version": "1.0.0",
+  "description": "荣诚商家后台多开工具",
+  "scripts": {
+    "dev": "python -m http.server 3000",
+    "build": "echo 'No build step required for static site'"
+  },
+  "keywords": ["外卖多开", "商家后台", "电商多开", "门店管理"],
+  "author": "荣诚科技",
+  "license": "MIT"
+}

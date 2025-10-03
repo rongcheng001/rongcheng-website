@@ -1,0 +1,348 @@
+/* 重置和基础样式 */
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body { 
+    font-family: 'Microsoft YaHei', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
+    line-height: 1.6; 
+    color: #333;
+}
+
+.container { 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+}
+
+/* 导航栏样式 */
+nav {
+    background: rgba(255, 255, 255, 0.95);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #667eea;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #667eea;
+}
+
+/* 头部样式 */
+header { 
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+    color: white; 
+    padding: 100px 0; 
+    text-align: center; 
+    position: relative;
+    overflow: hidden;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><polygon fill="rgba(255,255,255,0.05)" points="0,1000 1000,0 1000,1000"/></svg>');
+}
+
+header h1 { 
+    font-size: 3.5em; 
+    margin-bottom: 20px; 
+    font-weight: 700;
+    position: relative;
+}
+
+header .subtitle { 
+    font-size: 1.3em; 
+    margin-bottom: 30px; 
+    opacity: 0.9;
+    position: relative;
+}
+
+/* 下载按钮样式 */
+.download-btn { 
+    background: #ff6b6b; 
+    color: white; 
+    padding: 16px 40px; 
+    text-decoration: none; 
+    border-radius: 50px; 
+    font-size: 1.2em;
+    font-weight: 600;
+    display: inline-block; 
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+    position: relative;
+    border: none;
+    cursor: pointer;
+}
+
+.download-btn:hover { 
+    transform: translateY(-3px); 
+    box-shadow: 0 8px 25px rgba(255, 107, 107, 0.4);
+}
+
+/* Windows 下载按钮特殊样式 */
+.windows-download {
+    background: #2c3e50;
+}
+
+.windows-download:hover {
+    box-shadow: 0 8px 25px rgba(44, 62, 80, 0.4);
+}
+
+/* macOS 下载按钮特殊样式 */
+.macos-download {
+    background: #666;
+    opacity: 0.7;
+}
+
+.macos-download:hover {
+    opacity: 0.8;
+    box-shadow: 0 8px 25px rgba(102, 102, 102, 0.4);
+}
+
+/* 特性部分 */
+.features { 
+    padding: 100px 0; 
+    background: #f8f9fa; 
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 60px;
+    color: #333;
+}
+
+.feature-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 40px; 
+}
+
+.feature-card { 
+    background: white; 
+    padding: 40px 30px; 
+    border-radius: 15px; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    color: white;
+    font-size: 2em;
+}
+
+/* 截图部分 */
+.screenshots { 
+    padding: 100px 0; 
+    background: white;
+}
+
+.screenshot-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 30px; 
+}
+
+.screenshot { 
+    border-radius: 15px; 
+    overflow: hidden; 
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.screenshot:hover {
+    transform: scale(1.05);
+}
+
+.screenshot img { 
+    width: 100%; 
+    height: auto; 
+    display: block; 
+}
+
+/* 下载部分 */
+.download-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    text-align: center;
+}
+
+.download-info {
+    background: rgba(255,255,255,0.1);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.version-badge {
+    background: rgba(255,255,255,0.2);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.download-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.download-note {
+    margin-top: 30px;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+/* 页脚 */
+footer { 
+    background: #2c3e50; 
+    color: white; 
+    padding: 60px 0 30px; 
+    text-align: center; 
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #3498db;
+}
+
+.footer-contact {
+    margin-top: 10px;
+    opacity: 0.7;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    header h1 { 
+        font-size: 2.5em; 
+    }
+    
+    .section-title { 
+        font-size: 2em; 
+    }
+    
+    .nav-links { 
+        display: none; 
+    }
+    
+    .feature-grid { 
+        grid-template-columns: 1fr; 
+    }
+    
+    .download-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .download-btn {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+}
+
+/* 移动端导航菜单 */
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background: white;
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        display: none;
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #667eea;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #764ba2;
+}
